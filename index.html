@@ -6,6 +6,8 @@
     <title>Links Úteis</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -88,16 +90,41 @@
 <div class="container text-center mt-5">
     <!-- Título da página -->
     <h1 class="mb-4">Links úteis</h1>
+    <div class="alert alert-secondary my-3">
+    <p>Abaixo você encontra links úteis para estudantes</p>
+    <p>Você também pode sugerir links no GitHub ou LinkedIn no final desta página</p>
+    </div>
     <!-- Grupo 1: Ferramentas Gratuitas para Estudantes -->
-    <div class="row pb-5 my-3">
+    <div class="row py-5 my-3">
         <div class="col">
             <p id="grupo-1" class="lead h2">Ferramentas Gratuitas para Estudantes</p>
             <div class="list-group">
+                <a href="https://www.efset.org/4-skill/launch/" class="list-group-item list-group-item-action" target="_blank">Certificação de Inglês Gratuita</a>
                 <a href="https://www.figma.com/education/" class="list-group-item list-group-item-action" target="_blank">Figma</a>
                 <a href="https://education.github.com/pack" class="list-group-item list-group-item-action" target="_blank">Github Student Pack</a>
                 <a href="https://www.jetbrains.com/community/education/#students/" class="list-group-item list-group-item-action" target="_blank">IDEs da Jetbrains</a>
             </div>
+            <!-- Button trigger modal ajuda -->
+            <button type="button" class="btn btn-secondary my-3" data-bs-toggle="modal" data-bs-target="#ajudaModal">
+                Precisa de ajuda com verificação de estudante?
+            </button>
+            <!-- Modal Ajuda -->
+            <div class="modal fade" id="ajudaModal" tabindex="-1" aria-labelledby="ajudaModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="ajudaModalLabel">Precisa de ajuda?</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Se você for estudante matriculado em curso de nível superior e precise de ajuda com verificação de estudante, entre em contato comigo pelo <a href="https://www.linkedin.com/in/victorstochero/" target="_blank">LinkedIn</a>.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
     <!-- Grupo 2: Youtube -->
     <div class="row pb-5 my-3">
@@ -142,12 +169,13 @@
         <div class="col">
             <p id="grupo-4" class="lead h2">Cursos</p>
             <div class="list-group">
+                <a href="https://www.alura.com.br/" class="list-group-item list-group-item-action" target="_blank">Alura</a>
                 <a href="https://curso.dev/" class="list-group-item list-group-item-action" target="_blank">CursoDev</a>
                 <a href="https://pacotefullstack.com/" class="list-group-item list-group-item-action" target="_blank">Dankicode</a>
                 <a href="https://www.dio.me/" class="list-group-item list-group-item-action" target="_blank">Dio</a>
                 <a href="https://academy.especializati.com.br/" class="list-group-item list-group-item-action" target="_blank">EspecializaTI</a>
                 <a href="https://www.estudonauta.com/" class="list-group-item list-group-item-action" target="_blank">Estudonauta</a>
-                <a href="https://moodle.ifrs.edu.br/course/index.php?categoryid=79" class="list-group-item list-group-item-action" target="_blank">IFRS - Cursos Gratuitos</a>
+                <a href="https://moodle.ifrs.edu.br/course/index.php?categoryid=79" class="list-group-item list-group-item-action" target="_blank"><span class="position-relative px-2">IFRS<span class="badge position-absolute top-0 start-100 text-bg-success">Cursos Gratuitos</span></span></a>
                 <a href="https://fsphp.com.br/" class="list-group-item list-group-item-action" target="_blank">FSPHP</a>
                 <a href="https://laravue.com.br/" class="list-group-item list-group-item-action" target="_blank">Laravue</a>
                 <a href="https://onebitcode.com/" class="list-group-item list-group-item-action" target="_blank">Onebitcode</a>
@@ -259,13 +287,22 @@
     </div>
 </div>
 <!-- Github Footer -->
-<footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
-    <a href="https://github.com/VictorStochero/toolsdev" target="_blank" class="col mb-3 mb-md-0 me-md-auto text-center text-decoration-none">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github me-2" viewBox="0 0 16 16" width="50" height="50">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-        </svg>
-    </a>
-</footer>
+    <footer class="content">
+        <div class="row g-0 justify-content-center">
+            <div class="col-8">
+                <div class="text-center">
+                    <p>Feito com ❤️ por <a href="https://www.linkedin.com/in/victorstochero/" target="_blank" class="link-success">Victor Stochero</a></p>
+                    <p>Projeto sem fins lucrativos, colabore no GitHub ou faça sugestões pelo Linkedin:</p>
+                </div>
+                <div class="text-center display-6 pb-3 mb-5 ">
+                    <a href="https://github.com/VictorStochero/" target="_blank" class="link-secondary"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/victorstochero/" target="_blank" class="link-secondary"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- Dark Mode Switch -->
